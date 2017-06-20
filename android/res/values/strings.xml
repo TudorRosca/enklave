@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tablogintag">LOGIN</string>
+    <string name="tabsinguptag">SIGN UP</string>
+
+    <string name="app_name">Enklave</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="facebook_app_id">1549151355376993</string>
+
+    <string name="login">Login</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+
+    <string name="clientid">EeTst6oR0udDrcKUScROksiDKiBPdUvp8leTWVVO</string>
+    <string name="clientsecret">goGcpJ1QPiAoTTOQRIGya6cCau0TTNpcrpzKudHynfPvcmYHKuWh0IpH8vEB2ZHYVAt6qOKdNXQZkMP1yKUYYDXX5sEu8ACr9mthmgR9ytaDqoXindSbX568r45saSiN</string>
+    <string name="api_url">http://enklave-1720445391.us-west-2.elb.amazonaws.com</string>
+    <string name="login_url">/o/token/</string>
+    <string name="register_url">/users/register</string>
+    <string name="convert_token">/auth/convert-token</string>
+    <string name="Details">informationLog</string>
+    <string name="email_or_username">Email</string>
+    <string name="password_text">Password</string>
+    <string name="button_login_enklave">button login enklave</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="image_and_label_or">image and label or</string>
+    <string name="title_image">title image</string>
+    <string name="nickname">Nickname</string>
+    <string name="email_address">Email Address</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="btnregister">btnRegister</string>
+
+</resources>

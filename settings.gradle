@@ -1,0 +1,1 @@
+include 'android', 'core', ':java-websocket-1.3.0'
