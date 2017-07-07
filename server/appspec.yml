@@ -1,0 +1,35 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /srv/enklave_app/enklave
+permissions:
+  - object: /srv/enklave_app/enklave
+    owner: ubuntu
+    group: ubuntu
+hooks:
+  BeforeInstall:
+    - location: scripts/clean_instance.sh
+      timeout: 6000
+      runas: root
+  AfterInstall:
+    - location: scripts/install_os_dependencies.sh
+      timeout: 6000
+      runas: root
+    - location: scripts/setup_python_env.sh
+      timeout: 6000
+      runas: root
+    - location: scripts/install_python_dependencies.sh
+      timeout: 6000
+      runas: ubuntu
+    - location: scripts/before_app_start.sh
+      timeout: 6000
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_application.sh
+      timeout: 6000
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 6000
+      runas: root

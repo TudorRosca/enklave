@@ -1,0 +1,35 @@
+[
+{
+  "fields": {
+    "color": "ff0000",
+    "logo": "https://s3.amazonaws.com/enklave-static/static/img/prometheans.png",
+    "display_order": 1,
+    "name": "Prometheans",
+    "description": "Self-determination is what makes us human! Society functioned just fine until it was manipulated by occult forces. We must bring back the old ways of democracy and economic freedom!"
+  },
+  "model": "backend.faction",
+  "pk": 1
+},
+{
+  "fields": {
+    "color": "0000ff",
+    "logo": "https://s3.amazonaws.com/enklave-static/static/img/architechs.png",
+    "display_order": 2,
+    "name": "Architechs",
+    "description": "You are certain that humans emotions stand in the way of efficient and durable administration of a society. Your individuality is guaranteed by giving the task of government to an A.I."
+  },
+  "model": "backend.faction",
+  "pk": 2
+},
+{
+  "fields": {
+    "color": "00ff00",
+    "logo": "https://s3.amazonaws.com/enklave-static/static/img/edenites.png",
+    "display_order": 3,
+    "name": "Edenites",
+    "description": "You aim to be part of a super-organism composed of all of Earth's biosphere. Human Civilization can only survive by evolving past the individual."
+  },
+  "model": "backend.faction",
+  "pk": 3
+}
+]

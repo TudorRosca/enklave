@@ -1,0 +1,30 @@
+
+<html>
+
+{% load swampdragon_tags %}
+
+<!-- Swamp dragon -->
+{% swampdragon_settings %}
+<!--<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/vendor/sockjs-0.3.4.min.js"></script>-->
+<!--<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/swampdragon.js"></script>-->
+<!--<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/datamapper.js"></script>-->
+<!--<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/swampdragon-vanilla.js"></script>-->
+
+
+
+
+{% swampdragon_settings %}
+<script type="text/javascript" src="{% static 'static/swampdragon/js/dist/swampdragon.js' %}"></script>
+<script type="text/javascript" src="{% static 'static/swampdragon/js/vendor/sockjs-0.3.4.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static/swampdragon/js/datamapper.js' %}"></script>
+<script type="text/javascript" src="{% static 'static/swampdragon/js/swampdragon-vanilla.js' %}"></script>
+
+<!-- To-do app -->
+<script type="text/javascript" src="{% static 'static/swampdragon/app.js' %}"></script>
+<script type="text/javascript" src="{% static 'static/swampdragon/controllers.js' %}"></script>
+
+<body>
+</body>
+</html>
+
+

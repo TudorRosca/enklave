@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (Notification.permission !== "granted")
+        Notification.requestPermission();
+    });
+      var url = window.location.href
+      url = url.replace('/socket/page/', '')
+      if (url.indexOf('localhost')>= 0) {
+        ws_endpoint = 'localhost'
+      }
+      else {
+        ws_endpoint = 'enklave-1720445391.us-west-2.elb.amazonaws.com'
+      }
+      var ws = new WebSocket('ws://' + ws_endpoint + ':8888/ws/{{token}}');
+      <!--ws = new WebSocket('ws://enklave-1720445391.us-west-2.elb.amazonaws.com:8888/ws/{{token}}');-->
+      ws.onopen = function(event){ console.log('socket open'); }
+      ws.onclose = function(event){ console.log('socket closed'); message_me('connection closed!'); }
+      ws.onerror = function(error){ console.log('error:', err); }
+      ws.onmessage = function(event){ console.log('message:', event.data); }
+
+      function isRead() {
+        var message = {
+            "type": "message_received",
+            "params": {
+                "message_ids": [parseInt(document.myform3['id'].value)]
+            }
+        }
+        ws.send(JSON.stringify(message));
+      }
+
+      function locationMessage() {
+        <!--alert(document.myform['txt'].value);-->
+        var message = {
+            "type": "location_message",
+            "params": {
+                "txt": document.myform4['txt'].value,
+            }
+        }
+        console.log(message);
+        ws.send(JSON.stringify(message));
+      }
+
+      function handleIt() {
+        <!--alert(document.myform['txt'].value);-->
+        var message = {
+            "type": "message",
+            "params": {
+                "to_user": document.myform['to_user'].value,
+                "txt": document.myform['txt'].value
+            }
+        }
+        ws.send(JSON.stringify(message));
+      }
+
+      function handleIt2() {
+        <!--alert(document.myform2['txt'].value);-->
+        var message = {
+            "type": "scrap",
+            "params": {
+                "lat": parseFloat(document.myform2['lat'].value),
+                "long": parseFloat(document.myform2['long'].value)
+            }
+        }
+        ws.send(JSON.stringify(message));
+      }
+
+      ws.onmessage = function (evt) {
+         message = JSON.parse(evt.data);
+         if (message['msg_type'] == 'notification') {
+            notifyMe(message['message'])
+         }
+         if (message['msg_type'] == 'attack') {
+            notifyMe("You're under attack!")
+         }
+         if (message['msg_type'] == 'message sent') {
+            message_me('<b>' + message['data']['id'] + "." + message['data']['from_user'] + ': ' + message['data']['txt'] + '</b>')
+         }
+         if (message['msg_type'] == 'message') {
+            message_me(message['id'] + "." + message['from_user'] + ': ' + message['message'])
+         }
+         if (message['msg_type'] == 'location_message') {
+            message_me('loc:' + message['id'] + "." + message['from_user'] + ': ' + message['message'])
+         }
+         if (message['msg_type'] == 'faction_message') {
+            message_me('faction:' + message['faction_id'] + "." + message['from_user'] + ': ' + message['message'])
+         }
+         if (message['msg_type'] == 'error') {
+            message_me('error: ' + message['message'])
+         }
+         if (message['msg_type'] == 'message_viewed') {
+            message_me('message_viewed: ' + message['id'])
+         }
+         console.log(message)
+      };
+
+      function notifyMe(message) {
+          if (!Notification) {
+            alert('Desktop notifications not available in your browser. Try Chromium.');
+            return;
+          }
+
+          if (Notification.permission !== "granted")
+            Notification.requestPermission();
+          else {
+            var notification = new Notification('Notification title', {
+              icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+              body: message,
+            });
+
+            notification.onclick = function () {
+              window.open("http://stackoverflow.com/a/13328397/1269037");
+            };
+          }
+    }
+
+    function message_me(message){
+        var div2 = document.createElement('div');
+        div2.className = 'block-2';
+        div2.innerHTML = message
+        document.getElementById("messages").appendChild(div2);
+    }
+
+    </script>
+</head>
+<body>
+    <script>
+
+        <!--ws.onopen = function() {-->
+             <!--ws.send("Hello, world");-->
+          <!--};-->
+
+
+            function handleClick()
+            {
+            alert("Favorite weird creature: "+document.myform['whichThing']);
+            event.preventDefault(); // disable normal form submit behavior
+            return false; // prevent further bubbling of event
+            }
+    </script>
+    <form name="myform" action="javascript:handleIt()">
+        <input name="txt"  type="text" value="" placeholder="txt"/>
+        <input name="to_user"  type="text" value="" placeholder="to_user"/>
+        <input name="Submit"  type="submit" value="Update"/>
+
+    </form>
+    <form name="myform2" action="javascript:handleIt2()">
+        <input name="lat"  type="text" value="" placeholder="lat"/>
+        <input name="long"  type="text" value="" placeholder="long"/>
+        <input name="Submit"  type="submit" value="Update"/>
+    </form>
+    <form name="myform3" action="javascript:isRead()">
+        <input name="id"  type="text" value="" placeholder="id"/>
+        <input name="Submit"  type="submit" value="Is Read"/>
+    </form>
+    <form name="myform4" action="javascript:locationMessage()">
+        <input name="txt"  type="text" value="" placeholder="txt"/>
+        <input name="Submit"  type="submit" value="Send Message"/>
+    </form>
+    <!--<button onclick="isRead()">Is Read</button>-->
+    <div id="messages">
+
+    </div>
+</body>
+</html>

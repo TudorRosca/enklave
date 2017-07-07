@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Notifications demo</h1>
+
+<!-- This is our list of notifications -->
+<ul id="notifications">
+    {% for notification in object_list %}
+    <li>{{ notification.message }}</li>
+    {% endfor %}
+</ul>
+
+
+<!-- SwampDragon -->
+{% load staticfiles %}
+
+
+
+
+<script type="text/javascript" src="https://s3.amazonaws.com/static-enklave/static/swampdragon/js/vendor/sockjs-0.3.4.js"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/static-enklave/static/swampdragon/js/legacy/swampdragon.js"></script>
+<!--<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/vendor/sockjs-0.3.4.min.js"></script>-->
+<!--<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/swampdragon.js"></script>-->
+<script type="text/javascript" src="https://s3.amazonaws.com/static-enklave/static/swampdragon/js/dist/datamapper.js"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/static-enklave/static/swampdragon/js/legacy/swampdragon-vanilla.js"></script>
+<script type="text/javascript" src="http://localhost:9999/settings.js"></script>
+
+
+
+<!-- notifications -->
+<script>
+    auth_token = "Asdasd";
+</script>
+<script type="text/javascript" src="https://s3.amazonaws.com/static-enklave/static/swampdragon/notifications.js"></script>
+<!--<script type="text/javascript" src="/static/notifications.js"></script>-->
+
+
+</body>
+</html>

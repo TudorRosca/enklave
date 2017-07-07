@@ -1,0 +1,542 @@
+[
+{
+  "fields": {
+    "name": "MASS_SCRAP",
+    "value": "1",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 1
+},
+{
+  "fields": {
+    "name": "MASS_BRICK",
+    "value": "10",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 2
+},
+{
+  "fields": {
+    "name": "MASS_CELL",
+    "value": "5",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 3
+},
+{
+  "fields": {
+    "name": "MAX_MASS",
+    "value": "1000",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 4
+},
+{
+  "fields": {
+    "name": "ENKLAVES_DISPLAYED",
+    "value": "50",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 5
+},
+{
+  "fields": {
+    "name": "ENKLAVES_ON_MAP_RADIUS",
+    "value": "25",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 6
+},
+{
+  "fields": {
+    "name": "MIN_SCRAP_COLLECT_DISTANCE",
+    "value": "30",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 7
+},
+{
+  "fields": {
+    "name": "CONVERSION_RATE_BRICK",
+    "value": "20",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 8
+},
+{
+  "fields": {
+    "name": "CONVERSION_RATE_CELL",
+    "value": "30",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 9
+},
+{
+  "fields": {
+    "name": "CRAFTING_TIME_BRICK",
+    "value": "10",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 10
+},
+{
+  "fields": {
+    "name": "CRAFTING_TIME_CELL",
+    "value": "15",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 11
+},
+{
+  "fields": {
+    "name": "ENKLAVE_MAX_LEVEL",
+    "value": "9",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 12
+},
+{
+  "fields": {
+    "name": "ENKLAVE_BRICKS_UPGRADE",
+    "value": "[9,9,9,9,9,9,9,9,9,9]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 13
+},
+{
+  "fields": {
+    "name": "ENKLAVE_SCRAP_PRODUCTION",
+    "value": "[0,50,75,100,125,150,175,200,225,250]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 14
+},
+{
+  "fields": {
+    "name": "ENKLAVE_SCRAP_CAPACITY",
+    "value": "[400,500,600,700,800,900,1000,1100,1200,1300]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 15
+},
+{
+  "fields": {
+    "name": "ENKLAVE_COLLECT_STEAL",
+    "value": "[20,30,33,36,39,42,45,48,51,54]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 16
+},
+{
+  "fields": {
+    "name": "PLAYER_ENKLAVE_REACH_DISTANCE",
+    "value": "65",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 17
+},
+{
+  "fields": {
+    "name": "ENKLAVE_COLLECT_MIN_INTERVAL",
+    "value": "6",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 18
+},
+{
+  "fields": {
+    "name": "ENKLAVE_BUILD_TIME",
+    "value": "4",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 19
+},
+{
+  "fields": {
+    "name": "SCRAP_COLLECT_MIN_INTERVAL",
+    "value": "30",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 20
+},
+{
+  "fields": {
+    "name": "SCRAP_COLLECT_SPEED_CHANCE_QTY",
+    "value": "[[\"0-9\",100,10],[\"10-19\",90,10],[\"20-29\",80,10],[\"30-39\",70,10],[\"40-49\",60,10],[\"50-59\",45,10],[\"60-69\",32,10],[\"70-99\",21,10],[\"100-1000\",10,10]]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 21
+},
+{
+  "fields": {
+    "name": "PLAYER_XP_PROGRESSION",
+    "value": "[3000,6000,12000,24000,48000,96000,192000,384000,768000,1536000,3072000,6144000,12288000,24576000,49152000,98304000,196608000,393216000,786432000]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 22
+},
+{
+  "fields": {
+    "name": "PLAYER_ENERGY_PROGRESSION",
+    "value": "[2500,3000,3500,4000,4500,5000,5500,6000,6500,7000,7500,8000,8500,9000,9500,10000,10500,11000,11500,12000]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 23
+},
+{
+  "fields": {
+    "name": "PLAYER_RECHARGE_PROGRESSION",
+    "value": "[20,19,18,17,16,15,14,13,12,11,10,10,10,10,10,10,10,10,10,10]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 24
+},
+{
+  "fields": {
+    "name": "PLAYER_DAMAGE_PROGRESSION",
+    "value": "[200,240,280,320,360,400,440,480,520,560,600]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 25
+},
+{
+  "fields": {
+    "name": "PLAYER_DEFENSE_PROGRESSION",
+    "value": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 26
+},
+{
+  "fields": {
+    "name": "PLAYER_SHOT_COST_PROGRESSION",
+    "value": "[20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 27
+},
+{
+  "fields": {
+    "name": "PLAYER_COMBAT_EXIT_DISTANCE",
+    "value": "100",
+    "description": ""
+  },
+  "model": "backend.appconfig",
+  "pk": 28
+},
+{
+  "fields": {
+    "name": "ENKLAVE_COMBAT_MIN_INTERVAL",
+    "value": "1",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 29
+},
+{
+  "fields": {
+    "name": "ENKLAVE_COMBAT_MAX_DURATION",
+    "value": "30",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 30
+},
+{
+  "fields": {
+    "name": "ENKLAVE_HP_PER_BRICK",
+    "value": "300",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 31
+},
+{
+  "fields": {
+    "name": "ENKLAVE_DAMAGE_PROGRESSION",
+    "value": "[500,550,600,650,700,750,800,850,900,950]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 32
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RELOAD_TIME",
+    "value": "8",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 33
+},
+{
+  "fields": {
+    "name": "PLAYER_RELOAD_TIME",
+    "value": "8",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 34
+},
+{
+  "fields": {
+    "name": "PLAYER_REJOIN_TIME",
+    "value": "1",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 35
+},
+{
+  "fields": {
+    "name": "PLAYER_SHOT_XP_GAIN",
+    "value": "0.1",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 36
+},
+{
+  "fields": {
+    "name": "PLAYER_DROPOUT_TIME",
+    "value": "30",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 37
+},
+{
+  "fields": {
+    "name": "PLAYER_CELL_RELOAD_TIME",
+    "value": "12",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 38
+},
+{
+  "fields": {
+    "name": "PLAYER_ENERGY_CELL_USAGE_COST",
+    "value": "25",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 39
+},
+{
+  "fields": {
+    "name": "ENERGY_CELL_RECHARGE_VALUE",
+    "value": "1500",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 40
+},
+{
+  "fields": {
+    "name": "PLAYER_RECHARGE_XP_GAIN",
+    "value": "100",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 41
+},
+{
+  "fields": {
+    "name": "PLAYER_BUILD_XP_GAIN",
+    "value": "40",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 42
+},
+{
+  "fields": {
+    "name": "PLAYER_MAX_MASS_PROGRESSION",
+    "value": "[1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 43
+},
+{
+  "fields": {
+    "name": "APK_VERSION",
+    "value": "0.1.10",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 44
+},
+{
+  "fields": {
+    "name": "CHAT_POLLING_INTERVAL",
+    "value": "30",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 45
+},
+{
+  "fields": {
+    "name": "CHAT_SEND_MIN_INTERVAL",
+    "value": "5",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 46
+},
+{
+  "fields": {
+    "name": "PLAYER_BUILD_XP_BONUS",
+    "value": "[250,10]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 47
+},
+{
+  "fields": {
+    "name": "ENKLAVE_MAX_BRICKS",
+    "value": "89",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 48
+},
+{
+  "fields": {
+    "name": "ENKLAVE_REVERT_NEUTRAL_INTERVAL",
+    "value": "2",
+    "description": "minutes"
+  },
+  "model": "backend.appconfig",
+  "pk": 49
+},
+{
+  "fields": {
+    "name": "HOMEBASE_RELOCATION_INTERVAL",
+    "value": "7",
+    "description": "days"
+  },
+  "model": "backend.appconfig",
+  "pk": 50
+},
+{
+  "fields": {
+    "name": "HOMEBASE_CAPACITY",
+    "value": "5000",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 51
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_PER_LEVEL",
+    "value": "[0,0,0,1,1,1,2,2,2,3,3]",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 52
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_GENERATION_INTERVAL",
+    "value": "12",
+    "description": "hours"
+  },
+  "model": "backend.appconfig",
+  "pk": 53
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_DIST_MIN",
+    "value": "8000",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 54
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_DIST_MAX",
+    "value": "10000",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 55
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_ETA",
+    "value": "48",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 56
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_ATTACK_DISTANCE",
+    "value": "50",
+    "description": "meters"
+  },
+  "model": "backend.appconfig",
+  "pk": 57
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_FIRST_ATTACK_INTERVAL",
+    "value": "4",
+    "description": "hours"
+  },
+  "model": "backend.appconfig",
+  "pk": 58
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_SECOND_ATTACK_INTERVAL",
+    "value": "4",
+    "description": "hours"
+  },
+  "model": "backend.appconfig",
+  "pk": 59
+},
+{
+  "fields": {
+    "name": "ENKLAVE_RAIDERS_DAMAGE_BRICKS",
+    "value": "5",
+    "description": null
+  },
+  "model": "backend.appconfig",
+  "pk": 60
+}
+]
