@@ -20,7 +20,7 @@ django-ses==0.7.0
 django-silk==0.5.7
 django-storages==1.1.8
 django-uuidfield==0.5.0
-djangorestframework==3.3.2
+djangorestframework==3.11.2
 ecdsa==0.13
 elasticsearch==2.2.0
 functools32==3.2.3.post2
