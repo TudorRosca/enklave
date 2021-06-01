@@ -69,6 +69,6 @@ tinys3==0.1.11
 tornado==4.3
 tornado-redis==2.4.18
 txaio==2.2.1
-urllib3==1.14
+urllib3==1.26.5
 uWSGI==2.0.12
 zope.interface==4.1.3
