@@ -37,7 +37,7 @@ jsonschema==2.5.1
 MarkupSafe==0.23
 newrelic==2.60.0.46
 oauthlib==1.0.3
-paramiko==1.16.0
+paramiko==2.10.1
 pep8==1.7.0
 Pillow==3.1.0
 poster==0.8.1
