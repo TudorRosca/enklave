@@ -39,7 +39,7 @@ newrelic==2.60.0.46
 oauthlib==1.0.3
 paramiko==1.16.0
 pep8==1.7.0
-Pillow==3.1.0
+Pillow==9.3.0
 poster==0.8.1
 psutil==3.4.2
 psycopg2==2.6.1
